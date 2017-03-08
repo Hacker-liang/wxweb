@@ -1,0 +1,463 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>【未馨金融】专业的金融信息服务平台</title>
+    <meta name="keywords" content="未馨金融,p2p理财, p2p网贷平台,p2p平台">
+    <!--<meta name="description" content="礼德财富(www.leadercf.com)是广州礼德互联网金融信息服务有限公司旗下的p2p理财平台，是一个专业的P2P网络借款、投资理财的理财平台。礼德财富本着专业、安全、高效、透明的服务理念，致力做中国p2p理财平台的领导者，给您最安全的投资体验，投资理财热线：4008-808-178。">-->
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+    <meta property="qc:admins" content="25640427676451452366375" />
+    <meta name="baidu-site-verification" content="2iev9jDAus" />
+    <link rel="stylesheet" type="text/css" href="assets/css/base.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/component.css" />
+
+    <!--<script type="text/javascript" src="https://www.leadercf.com/assets/js/library/mod.js"></script>
+    <script type="text/javascript" src="https://www.leadercf.com/assets/js/library/jquery.js"></script>
+    <script type="text/javascript" src="https://www.leadercf.com/assets/js/common/pc/search.js"></script>
+    <script type="text/javascript" src="https://www.leadercf.com/assets/js/library/common.js"></script>-->
+    <!--<link rel="shortcut icon" href="../../../../../assets/images/component/pc/header/fav.png">-->
+
+</head>
+
+<body>
+    <input type="hidden" id="security_token" name="ci_csrf_token" value="">
+
+    <div class="gb_header">
+        <div class="top">
+            <div class="inner w1200">
+                <div class="hot_line">
+                    客服热线：<a style="color:#999!important;">4008-808-178</a>
+                </div>
+                <div class="media">
+                    <a class="icon_sns weibo" href="http://weibo.com/leadercf" target="_blank" rel="nofollow"> </a>
+                    <a class="icon_sns weixin" id="header_weixin" href="#"> </a>
+                </div>
+
+                <div class="user_menu">
+                    <!-- 未登录 -->
+                    <a href="https://www.leadercf.com/signup/simple" rel="nofollow" class="menuitem sp_active remove">
+                        <span></span>注册
+                    </a>
+                    <a href="https://www.leadercf.com/login" rel="nofollow" class="menuitem sp_active loginAtonce remove">登录</a>
+
+                    <a href="https://www.leadercf.com/vip" rel="nofollow" class="menuitem sp_active remove" id="vip2"><span></span>VIP</a>
+                    <a href="https://www.leadercf.com/apps" rel="nofollow" class="menuitem sp_active remove" id="appDownLoad">
+                        <span></span>APP
+                    </a>
+                    <a href="https://www.leadercf.com/security/vipPlanner" rel="nofollow" class="menuitem sp_active remove" id="recom">
+                        <span></span>推荐奖
+                    </a>
+                    <a href="https://www.leadercf.com/aboutus/brand" rel="nofollow" class="menuitem sp_active remove" id="image">
+                        <span></span>品牌升级
+                    </a>
+                    <a rel="nofollow" class="menuitem sp_active remove" id="collect">
+                        <span></span>收藏该页
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="inner w1200">
+
+                <a href="https://www.leadercf.com" class="logo">未馨金融</a>
+                <div class="depnav">
+                    <a href="https://www.leadercf.com/" class="hover navItem">首页</a>
+                    <a href="https://www.leadercf.com/invest.html" class="navItem">我要投资</a>
+                    <a href="https://www.leadercf.com/security.html" class="navItem">安全保障</a>
+                    <a href="https://www.leadercf.com/guide/index.html" class="navItem">新手指引</a>
+                    <div class="aboutus">信息披露
+                        <ul>
+                            <li class="announce">信息披露</li>
+                            <li>
+                                <a href="https://www.leadercf.com/aboutus/introduce">关于礼德</a>
+                            </li>
+                            <li>
+                                <a href="https://www.leadercf.com/aboutus/outcomes">平台数据</a>
+                            </li>
+                            <li>
+                                <a href="https://www.leadercf.com/bidintroduce/introdall">产品介绍</a>
+                            </li>
+                            <li>
+                                <a href="https://www.leadercf.com/aboutus/cooperation">合作机构</a>
+                            </li>
+                            <li>
+                                <a href="https://www.leadercf.com/article/announcement/yunyingbaogao">运营报告</a>
+                            </li>
+                            <li>
+                                <a href="https://www.leadercf.com/article/announcement/news">新闻动态</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="https://www.leadercf.com/center" class="myAccount" rel="nofollow">我的账户</a>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="weixin_block_layer">
+        <div class="mask"></div>
+        <div class="weixin_block_outer">
+            <h2 class="weixin_block_title">扫描二维码</h2>
+            <span class="weixin_block_close"></span>
+            <div class="weixin_block">
+                <div class="code_outer">
+                    <p>ileadercf</p>
+                    <span id="ileadercf"></span>
+                    <p>服务号 - 快速投资</p>
+                </div>
+
+                <div class="code_outer">
+                    <p>leadercf</p>
+                    <span id="leadercf"></span>
+                    <p>订阅号 - 理财资讯</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://www.leadercf.com/assets/js/component/pc/component.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://www.leadercf.com/assets/css/pc/index.css" />
+    <div class="section0">
+        <ul class="banner_picture">
+            <li style="background-image:url(uploads/images/focus/20170301/0947419828.png);" class="current">
+                <a href="https://www.leadercf.com/activity/public_interest" rel="nofollow" target="_blank"></a>
+            </li>
+            <li style="background-image:url(uploads/images/focus/20170301/0341054006.png);">
+                <a href="http://www.leadercf.com/about-3898.html" rel="nofollow" target="_blank"></a>
+            </li>
+            <li style="background-image:url(uploads/images/focus/20170116/1047193683.png);">
+                <a href="https://www.leadercf.com/guide/index.html" rel="nofollow" target="_blank"></a>
+            </li>
+            <li style="background-image:url(uploads/images/focus/20170124/0259383637.png);">
+                <a href="https://www.leadercf.com/security/vipPlanner" rel="nofollow" target="_blank"></a>
+            </li>
+            <li style="background-image:url(uploads/images/focus/20161219/0208381433.png);">
+                <a href="http://www.leadercf.com/security/firms" rel="nofollow" target="_blank"></a>
+            </li>
+            <li style="background-image:url(uploads/images/focus/20161125/1110105701.png);">
+                <a href="http://www.leadercf.com/security/bank" rel="nofollow" target="_blank"></a>
+            </li>
+        </ul>
+        <div class="w1200 info">
+            <ul class="banner_tag clearfix">
+                <li>
+                    <a href="https://www.leadercf.com/activity/public_interest" rel="nofollow" target="_blank" class="hover">积分捐助</a>
+                </li>
+                <li>
+                    <a href="http://www.leadercf.com/about-3898.html" rel="nofollow" target="_blank" class="">志愿者招募</a>
+                </li>
+                <li>
+                    <a href="https://www.leadercf.com/guide/index.html" rel="nofollow" target="_blank" class="">新手专享</a>
+                </li>
+                <li>
+                    <a href="https://www.leadercf.com/security/vipPlanner" rel="nofollow" target="_blank" class="">推荐好友</a>
+                </li>
+                <li>
+                    <a href="http://www.leadercf.com/security/firms" rel="nofollow" target="_blank" class="">央企入股</a>
+                </li>
+                <li>
+                    <a href="http://www.leadercf.com/security/bank" rel="nofollow" target="_blank" class="">足值质押</a>
+                </li>
+            </ul>
+            <div class="userInfo">
+                <div class="mask"></div>
+                <div class="layer">
+                    <!-- 未登录 -->
+                    <h3>预期年利率</h3>
+                    <div class="apr_rate"><em class="big">9</em>%<em class="big">-15</em>%</div>
+                    <p>10元起投 丨 注册领108元红包</p>
+                    <a href="https://www.leadercf.com/signup/simple" class="common-btn180 register-btn">注册领红包</a>
+                    <a href="https://www.leadercf.com/login" class="login-link">已有账号？立即登录</a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="section1">
+        <ul class="earnshows w1200 clearfix">
+            <li id="money_invest" data="4859945732">累计成交 <em>29</em>亿<em>2707</em>万<em>5094</em>元</li>
+            <li id="totalEarning" data="219331130.04">累计赚取 <em>1</em>亿<em>2368</em>万<em>5346</em>元</li>
+            <li id="runTime">安全运营 <em>2</em>年<em>289</em>天<em>9</em>时<em>48</em>分</li>
+            <li class="last"><a href="https://www.leadercf.com/aboutus/outcomes">礼德大数据</a></li>
+        </ul>
+    </div>
+    <div class="section2">
+        <div class="w1200 clearfix">
+            <div class="notice fl">
+                <h2 class="clearfix">
+                    <a href="https://www.leadercf.com/article/announcement/gonggao" class="fl notice-tag">公告</a>
+                    <a href="https://www.leadercf.com/article/announcement/gonggao" class="fr">更多</a>
+                </h2>
+                <ul></ul>
+            </div>
+            <ul class="right fl clearfix">
+                <li class="clearfix li2">
+                    <div class="picText">
+                        <div class="pic">
+                            <a href="https://www.leadercf.com/security/firms"></a>
+                        </div>
+                        <div class="text">央企入股</div>
+                    </div>
+                    <p>中国食品工业（集团）公司<br/>下属企业中食兆业<br/>战略入股礼德财富</p>
+                </li>
+                <li class="clearfix li0">
+                    <div class="picText">
+                        <div class="pic">
+                            <a href="https://www.leadercf.com/security/safetyMoney"></a>
+                        </div>
+                        <div class="text">资金安全</div>
+                    </div>
+                    <p>第三方资金平台托管<br/>风险保证金银行存管<br/>VIP个人账户损失险</p>
+                </li>
+                <li class="clearfix li1">
+                    <div class="picText">
+                        <div class="pic">
+                            <a href="https://www.leadercf.com/security/bank"></a>
+                        </div>
+                        <div class="text">银行级风控</div>
+                    </div>
+                    <p>足值质押借款<br/>机构连带担保<br/>电子合同保障</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="section3 w1200 clearfix">
+        <div class="acticle1">
+            <div class="tag"></div>
+            <h2>新手专享</h2>
+            <p>3天内可重复投资新手标</p>
+            <p>投资满5万送VIP</p>
+            <div class="lit">首次投资<em>1</em>万元，奖励红包<em>68</em>元
+                <ul>
+                    <li>首次投资<em>5</em>万元，奖励红包<em>108</em>元</li>
+                    <li>首次投资<em>3</em>万元，奖励红包<em>88</em>元</li>
+                    <li>首次投资<em>1</em>千元，奖励红包<em>18</em>元</li>
+                    <li>首次投资<em>1</em>百元，奖励红包<em>8</em>元</li>
+                    <li class="selected">首次投资<em>1</em>万元，奖励红包<em>68</em>元</li>
+                </ul>
+            </div>
+        </div>
+        <div class="new-block new-bid"></div>
+        <div class="new-block shortBid"></div>
+    </div>
+    <div class="bid-section w1200 clearfix sectionNew"></div>
+    <ul class="section6 w1200 clearfix">
+        <li class="bid-outer">
+            <span class="bid-pos transfer-bid">转</span>
+            <h2>债权转让</h2>
+            <div class="expect">预期年利率<span><em>10</em>%-<em>15</em>%</span></div>
+            <div class="btm">
+                <div class="fl">资金回笼一步到位 期限短</div>
+                <a href="https://www.leadercf.com/invest.html?type=credit" class="fr common-invest-btn">进入专区</a>
+            </div>
+        </li>
+        <!-- <li class="bid-outer">
+		<span class="bid-pos safe-bid">安</span>
+		<h2>安全循环</h2>
+		<div class="expect">预期年利率<span><em>7</em>%-<em>14</em>%</span></div>
+		<div class="btm clearfix">
+			<div class="fl">VIP待收账款作保障 安全无忧</div>
+			<a href="https://www.leadercf.com/invest.html?type=safe" class="fr common-invest-btn">进入专区</a>
+		</div>
+	</li> -->
+        <li>
+            <div><img src="https://www.leadercf.com/assets/images/pc/index/act2.png" /></div>
+        </li>
+        <li>
+            <a href="https://www.leadercf.com/apps" target="_blank"><img src="https://www.leadercf.com/assets/images/pc/index/act.png" /></a>
+        </li>
+    </ul>
+    <div class="section7">
+        <a href="https://www.leadercf.com/invest/publicgood.html" target="_blank">
+            <div class="w1200">
+                <!-- 	<h2>如果可以，让世界更有爱</h2>
+			<p>礼德公益捐助 · 社会责任</p>
+			<span class="learnMore">了解更多</span> -->
+            </div>
+        </a>
+    </div>
+    <div class="index-tit">媒体报道</div>
+    <div class="w1200 section8">
+        <a href="https://www.leadercf.com/article/announcement/news" class="index-link">查看更多</a>
+        <ul class="clearfix"></ul>
+    </div>
+    <div class="index-tit">合作机构</div>
+    <div class="w1200 section9">
+        <!-- <a href="" class="index-link">了解详情</a> -->
+        <ul class="clearfix">
+            <li>
+                <div class="picLogo picLogo0 borderRadius1"></div>
+                <h2 class="borderRadius3">第三方资金托管平台</h2>
+            </li>
+            <li>
+                <div class="picLogo picLogo1"></div>
+                <h2>风险保证金托管</h2>
+            </li>
+            <li>
+                <div class="picLogo picLogo2"></div>
+                <h2>个人账户损失保险</h2>
+            </li>
+            <li>
+                <div class="picLogo picLogo3"></div>
+                <h2>云技术支持</h2>
+            </li>
+            <li>
+                <div class="picLogo picLogo4"></div>
+                <h2>法律援助金托管</h2>
+            </li>
+            <li>
+                <div class="picLogo picLogo5"></div>
+                <h2>金融云防御入侵安全保障</h2>
+            </li>
+            <li>
+                <div class="picLogo picLogo6 borderRadius2"></div>
+                <h2 class="borderRadius4">珠宝玉石及贵金属检测</h2>
+            </li>
+        </ul>
+    </div>
+
+    <script type="text/javascript" src="https://www.leadercf.com/assets/js/common/pc/users.js"></script>
+    <script type="text/javascript" src="https://www.leadercf.com/assets/js/common/pc/quick_login.js"></script>
+    <script type="text/javascript" src="https://www.leadercf.com/assets/js/pc/index.js"></script>
+    <div class="gb_foot">
+        <div class="w1200 clearfix">
+            <div class="fl">
+                <div class="top">
+                    <div>
+                        <h3>客服热线</h3>
+                        <p><span class="telephone">4008-808-178</span> 周一至周五：8:30-19:00 &nbsp;&nbsp;周六至周日：9:00-17:30
+                            <a href="http://b.qq.com/webc.htm?new=0&sid=4008808178&eid=218808P8z8p8K8K8x8R80&o=&q=7&from=qqwpa" rel="nofollow" target="_blank"
+                                class="onlineServe">在线客服</a>
+                            <a href="http://weibo.com/leadercf" rel="nofollow" target="_blank" class="sinaWeb">新浪微博</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="btm">
+                    <a href="https://www.leadercf.com/aboutus/introduce" target="_blank">关于我们</a>
+                    <a href="https://www.leadercf.com/guide.html" target="_blank">新手指引</a>
+                    <a href="https://www.leadercf.com/bidintroduce/introdall" target="_blank">产品介绍</a>
+                    <a href="https://www.leadercf.com/security.html" target="_blank">安全保障</a>
+                    <a href="https://www.leadercf.com/aboutus/help" target="_blank">帮助中心</a>
+                    <a href="https://www.leadercf.com/about-97.html" target="_blank">加入我们</a>
+                    <a href="https://www.leadercf.com/about-33.html" target="_blank">使用条款</a>
+                </div>
+            </div>
+            <div class="fr clearfix rightCode">
+                <div class="fl">
+                    <img src="https://www.leadercf.com/assets/images/component/pc/footer/leadercf.png" />
+                    <span class="leadercf">礼德订阅号</span>
+                </div>
+                <div class="rightTop fr">
+                    <img src="https://www.leadercf.com/assets/images/component/pc/footer/code.png" />
+                    <div class="fr">
+                        <p class="fz14">扫码下载APP</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottomFooter indexFooter">
+        <div class="bottomInner w1200">
+            <div class="btm_info">
+                <div class="left">
+                    <div class="top_tips">礼德财富提醒您：市场有风险，投资需谨慎 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;© 广州礼德互联网金融信息服务有限公司 版权所有 <a href="http://www.miitbeian.gov.cn/"
+                            rel="nofollow">粤ICP备13045008号</a></div>
+                </div>
+                <div class="right">
+                    <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44010602001846" target="_blank" rel="nofollow" class="icon5"></a>
+                    <a href="https://trustsealinfo.verisign.com/splash?form_file=fdf/splash.fdf&amp;dn=www.leadercf.com&amp;lang=zh_cn" target="_blank"
+                        class="icon1" rel="nofollow"></a>
+                    <a href="https://ss.knet.cn/verifyseal.dll?sn=e13081944010042064rlpl000000&ct=df&a=1&pa=0.26721212244592607" target="_blank"
+                        class="icon2" rel="nofollow"></a>
+                    <a href="http://webscan.360.cn/index/checkwebsite/url/www.leadercf.com" target="_blank" class="icon3" rel="nofollow"></a>
+                    <a href="http://netadreg.gzaic.gov.cn/ntmm/WebSear/WebLogoPub.aspx?logo=f0cf984bc193436c9196b007d7416b52" target="_blank"
+                        rel="nofollow" class="icon4"></a>
+
+                </div>
+            </div>
+            <div class="allLink">
+                <div class="topInfo heightControl">友情链接：
+                    <a href="http://www.leadercf.com" target="_blank">P2P理财</a>&nbsp;&nbsp;<a href="http://ask.leadercf.com"
+                        target="_blank">网贷平台</a> <span class="w_line"></span>
+                    <a href="http://www.leadercf.com/info/" target="_blank">P2P网贷新闻</a> <span class="w_line"></span>
+                    <a href="http://www.leadercf.com/security.html" target="_blank">礼德财富安全</a>&nbsp;&nbsp;<a href="http://www.jpm.cn/money/"
+                        target="_blank">金评媒理财</a> <span class="w_line"></span>
+                    <a href="http://www.wangdaiabc.cn" target="_blank">网贷ABC</a>&nbsp;&nbsp;<a href="http://www.tou360.com"
+                        target="_blank">投资理财</a> <span class="w_line"></span>
+                    <a href="http://www.qhfax.com" target="_blank">互联网理财平台</a> <span class="w_line"></span>
+                    <a href="http://www.rongdaitong.cn" target="_blank">融贷通</a>&nbsp;&nbsp;<a href="http://www.01dai.com"
+                        target="_blank">第一贷款</a> <span class="w_line"></span>
+                    <a href="http://www.ycb.com" target="_blank">承兑汇票</a>&nbsp;&nbsp;<a href="http://www.batiaoyu.com" target="_blank">P2P理财</a>                    <span class="w_line"></span>
+                    <a href="http://www.hengancaifu.com" target="_blank">民间借贷加盟</a>&nbsp;&nbsp;<a href="http://www.qc288.com"
+                        target="_blank">个人投资理财</a> <span class="w_line"></span>
+                    <a href="http://www.rong360.com/licai/" target="_blank">理财产品</a>&nbsp;&nbsp;<a href="http://www.jhusd.com"
+                        target="_blank">福汇官网</a> <span class="w_line"></span>
+                    <a href="http://www.wdzj.com" target="_blank">网贷之家</a>&nbsp;&nbsp;<a href="http://www.wd361.com" target="_blank">网贷互联</a>                    <span class="w_line"></span>
+                    <a href="http://www.leadercf.com" target="_blank">P2P理财</a>&nbsp;&nbsp;<a href="http://www.rong360.com/licai-p2p/"
+                        target="_blank">网贷投资</a> <span class="w_line"></span>
+                    <a href="http://ask.leadercf.com/p2p/" target="_blank">理财小知识</a>&nbsp;&nbsp;<a href="http://www.leadercf.com/info/licai"
+                        target="_blank">理财攻略</a> <span class="w_line"></span>
+                    <a href="http://www.leadercf.com/info/novice" target="_blank">p2p新手入门</a> <span class="w_line"></span>
+                </div>
+                <div class="moreArrow">></div>
+            </div>
+        </div>
+    </div>
+    <div class="side_bar advertise">
+        <!-- 如果有广告位，这里添加个advertise的类名 -->
+        <ul class="bar_content">
+            <li class="appDownload">
+                <div class="li-hover">
+                    <img src="https://www.leadercf.com/assets/images/component/pc/footer/code.png" />
+                    <div class="hover-text">APP下载</div>
+                </div>
+            </li>
+            <li class="webchat">
+                <div class="li-hover">
+                    <div class="left">
+                        <dl>
+                            <dt class="mar"><img src="https://www.leadercf.com/assets/images/component/pc/footer/leadercf.png" alt="微信订阅号"></dt>
+                            <dd class="mar_t">订阅号</dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="https://www.leadercf.com/assets/images/component/pc/footer/ileadercf.png" alt="微信服务号"></dt>
+                            <dd>服务号</dd>
+                        </dl>
+                    </div>
+                    <div class="hover-text">官方微信</div>
+                </div>
+            </li>
+            <li class="earnCounting">
+                <div class="hover-text">计算收益</div>
+            </li>
+            <li class="service">
+                <a class="hover-text" href="http://b.qq.com/webc.htm?new=0&sid=4008808178&eid=218808P8z8p8K8K8x8R80&o=&q=7&from=qqwpa" target="_blank">在线客服</a>
+            </li>
+            <li class="help">
+                <a class="hover-text" href="https://www.leadercf.com/aboutus/help" target="_blank">帮助中心</a>
+            </li>
+            <li class="uptotop" id="uptotop">
+                <div class="hover-text">返回顶部</div>
+            </li>
+        </ul>
+    </div>
+    <div class="hidden">
+
+        <!-- 监测代码 start-->
+        <iframe width='0' height='0' frameborder='0' src='https://v.behe.com/js/0.html'></iframe>
+        <!-- 监测代码 end-->
+    </div>
+    <div style="display: none;">
+        <a href="http://www.leadercf.com/column.html" target="_blank">礼德财富文章列表</a>
+        <a href="http://www.leadercf.com/biaoqian.html" target="_blank">礼德财富标签列表</a>
+    </div>
+
+    <script src="https://v.behe.com/js/bgnms.js"></script>
+    <script>
+        beheActiveView({ at: "arrive", src: "1697005934", cid: "", sid: "2346" });
+    </script>
+</body>
+
+</html>
